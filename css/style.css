@@ -11,11 +11,25 @@
 
 ul li {
   text-indent: 10vh;
-  font-size: 100%;
+  font-size: 1.5rem;
 }
 
-#welcome{
-  height: 60vh;
+.navbar-nav .nav-link {
+  text-shadow: 1px 1px 3px rgb(0, 0, 0);
+  transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.9);
+  transform: translateY(-5px);
+}
+
+#welcome {
+  height: 40rem;
+}
+
+#welcome h1 {
+  font-size: 4rem;
 }
 
 .background_video {
@@ -47,7 +61,7 @@ ul li {
 .video-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.65); /* ajuste aqui */
+  background: rgba(0, 0, 0, 0.65);
   z-index: 2;
 }
 
@@ -65,6 +79,16 @@ ul li {
   font-style: normal;
 }
 
-.navbar {
-  transition: background 0.3s ease;
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler-icon-custom::before {
+  content: "☰";
+  font-size: 1.8rem;
+  color: white;
+}
+
+.navbar-toggler:not(.collapsed) .navbar-toggler-icon-custom::before {
+  content: "✕";
 }
