@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Granforneria</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Allura&family=Cinzel:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="background_video">
+      <div class="sticky-top">
+        <header class="rounded-1">
+          <nav class="container navbar navbar-expand-md navbar-light">
+            <h1>
+              <span class="fonte_gran text-light">Gran</span>
+              <p class="text-light">FORNERIA</p>
+            </h1>
+
+            <button
+              class="navbar-toggler"
+              data-bs-toggle="collapse"
+              data-bs-target="#navegacao"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="#">Início</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="#">Sobre</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="#">Cardápio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="#">Contato</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </header>
+
+        <div
+          id="welcome"
+          class="container d-flex justify-content-center align-items-center text-light text-center"
+        >
+          <div class="row">
+            <div class="col">
+              <h1>Tradição artesanal direto do forno à sua mesa</h1>
+            </div>
+            <p>
+              <a class="btn btn-danger w-25" href="#" role="button"
+                >Conheça nosso espaço</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- VIDEO -->
+      <video autoplay muted loop playsinline>
+        <source src="videos/background_video.mp4" type="video/mp4" />
+      </video>
+
+      <!-- OVERLAY -->
+      <div class="video-overlay"></div>
+    </div>
+  </body>
+</html>
